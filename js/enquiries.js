@@ -1,6 +1,3 @@
-const inquirer = require("inquirer");
-const mysql = require("mysql");
-
 const enquiries = {
 
     firstquestion: {
@@ -22,13 +19,13 @@ const enquiries = {
     roleAdd:{
         titleQuestion: 'What is the title of this new role?',
         salaryQuestion: 'What is the salary of this new role?',
-        departmentQuestion: 'What department is this a part of?'
+        departmentQuestion: 'What department ID is this a part of?'
     },
     employeeAdd:{
         firstNameQuestion: "What is the employee's first name?",
         lastNameQuestion: "What is the employee's last name?",
-        roleQuestion: "What is their role?",
-        managerQuestion: "Who is their manager?"
+        roleQuestion: "What is their role ID?",
+        managerQuestion: "What is the employee ID of their manager?"
     },
     view: {
         question: "What would you like to view?",
@@ -37,8 +34,8 @@ const enquiries = {
         c: 'Employees'
     },
     update: {
-        employeeQuestion: "Which employee role would you like to update?",
-        roleQuestion: "What is their new role?"
+        employeeQuestion: "What is the ID number of the employee whose role you would like to update?",
+        roleQuestion: "What is the ID number of their new role?"
     }
 }
 
