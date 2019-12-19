@@ -3,8 +3,8 @@ const cTable = require('console.table');
 
 
 //references page where inquirer inquiry strings are kept
-const enquiries = require("./enquiries");
-const database = require("./database");
+const enquiries = require("./js/enquiries");
+const database = require("./js/database");
 const connection = require("./config/connection");
 
 // begins the user-facing program, asking them where they would like to go.
