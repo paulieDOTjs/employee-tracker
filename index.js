@@ -7,9 +7,6 @@ const enquiries = require("./js/enquiries");
 const database = require("./js/database");
 const connection = require("./config/connection");
 
-console.log(1)
-console.log('1')
-
 // begins the user-facing program, asking them where they would like to go.
 function startQuestioning() {
     inquirer.prompt(
